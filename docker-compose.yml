@@ -1,0 +1,20 @@
+version: '3'
+services:
+  service-a:
+    image: service-a:latest
+    ports:
+      - "8080:8080"
+  service-b:
+    image: service-b:latest
+    ports:
+      - "8081:8080"
+  service-c:
+    image: service-c:latest
+    ports:
+      - "8082:8080"
+  testing-framework:
+    image: microservices-testing-framework:latest
+    depends_on:
+      - service-a
+      - service-b
+      - service-c

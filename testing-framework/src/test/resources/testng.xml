@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Microservices Test Suite">
+    <test name="UI Tests">
+        <classes>
+            <class name="com.example.tests.selenium.UserManagementUITest"/>
+        </classes>
+    </test>
+    <test name="API Tests">
+        <classes>
+            <class name="com.example.tests.restassured.UserApiTest"/>
+        </classes>
+    </test>
+</suite>
